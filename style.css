@@ -1,0 +1,123 @@
+/*3 column preview card component -> style.css*/
+
+/*---Fonts---*/
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*---/Fonts---*/
+
+/*Variables*/
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+/*Getting rid of default parameters*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---Body---*/
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+/*---/Body---*/
+
+/*---main container---*/
+main {
+  max-width: 90%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+main * {
+  font: 400 15px "Lexend Deca", sans-serif;
+  color: var(--transparentWhite);
+}
+/*---/main container---*/
+
+/*---Each section---*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem;
+  row-gap: 2em;
+}
+
+section h1 {
+  font: 700 40px "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--veryLightGray);
+}
+section p {
+  line-height: 2.5ch;
+}
+section button {
+  background-color: white;
+  border: 2px solid white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background 0.25s ease;
+}
+section button:hover {
+  background: none;
+  border: 2px solid var(--veryLightGray);
+  color: var(--transparentWhite);
+}
+/*---/Each section---*/
+
+/*---Sedans section---*/
+.sedans-section {
+  background-color: var(--brightOrange);
+}
+.sedans-section button {
+  color: var(--brightOrange);
+}
+/*---/Sedans section---*/
+
+/*---suvs section---*/
+.suvs-section {
+  background-color: var(--darkCyan);
+}
+.suvs-section button {
+  color: var(--darkCyan);
+}
+/*---/suvs section---*/
+
+/*---Luxury section---*/
+.luxury-section {
+  background-color: var(--veryDarkCyan);
+}
+.luxury-section button {
+  color: var(--veryDarkCyan);
+}
+/*---/Luxury section---*/
+
+/*---Media queries---*/
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 0;
+  }
+  main {
+    grid-template-columns: auto auto auto;
+    max-width: 60%;
+  }
+  section button {
+    margin-top: 4rem;
+  }
+}
+/*---/Media queries---*/
