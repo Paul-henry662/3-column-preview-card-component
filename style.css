@@ -71,6 +71,7 @@ section a {
   border-radius: 2rem;
   cursor: pointer;
   text-transform: capitalize;
+  text-decoration: none;
   transition: background 0.25s ease;
 }
 section a:hover {
