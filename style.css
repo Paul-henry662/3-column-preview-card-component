@@ -41,7 +41,7 @@ main {
   overflow: hidden;
 }
 main * {
-  font: 400 15px "Lexend Deca", sans-serif;
+  font: 400 1rem "Lexend Deca", sans-serif;
   color: var(--transparentWhite);
 }
 /*---/main container---*/
@@ -56,15 +56,15 @@ section {
   row-gap: 2em;
 }
 
-section h1 {
-  font: 700 40px "Big Shoulders Display", cursive;
+section h2 {
+  font: 700 2.5rem "Big Shoulders Display", cursive;
   text-transform: uppercase;
   color: var(--veryLightGray);
 }
 section p {
   line-height: 2.5ch;
 }
-section button {
+section a {
   background-color: white;
   border: 2px solid white;
   padding: 0.7rem 1.5rem;
@@ -73,7 +73,7 @@ section button {
   text-transform: capitalize;
   transition: background 0.25s ease;
 }
-section button:hover {
+section a:hover {
   background: none;
   border: 2px solid var(--veryLightGray);
   color: var(--transparentWhite);
@@ -84,7 +84,7 @@ section button:hover {
 .sedans-section {
   background-color: var(--brightOrange);
 }
-.sedans-section button {
+.sedans-section a {
   color: var(--brightOrange);
 }
 /*---/Sedans section---*/
@@ -93,7 +93,7 @@ section button:hover {
 .suvs-section {
   background-color: var(--darkCyan);
 }
-.suvs-section button {
+.suvs-section a {
   color: var(--darkCyan);
 }
 /*---/suvs section---*/
@@ -102,7 +102,7 @@ section button:hover {
 .luxury-section {
   background-color: var(--veryDarkCyan);
 }
-.luxury-section button {
+.luxury-section a {
   color: var(--veryDarkCyan);
 }
 /*---/Luxury section---*/
@@ -116,7 +116,7 @@ section button:hover {
     grid-template-columns: auto auto auto;
     max-width: 60%;
   }
-  section button {
+  section a {
     margin-top: 4rem;
   }
 }
